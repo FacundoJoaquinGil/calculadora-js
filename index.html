@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="mostrarCero('')" >
+    <h1>Calculadora Con Javascript</h1>
+
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly >
+        <br>
+        <input type="button" value="1" onclick="mostrar('1')">
+        <input type="button" value="2" onclick="mostrar('2')">
+        <input type="button" value="3" onclick="mostrar('3')">
+        <input type="button" value="+" onclick="mostrar('+')">
+        <br>
+        <input type="button" value="4" onclick="mostrar('4')">
+        <input type="button" value="5" onclick="mostrar('5')">
+        <input type="button" value="6" onclick="mostrar('6')">
+        <input type="button" value="-" onclick="mostrar('-')">
+        <br>
+        <input type="button" value="7" onclick="mostrar('7')">
+        <input type="button" value="8" onclick="mostrar('8')">
+        <input type="button" value="9" onclick="mostrar('9')">
+        <input type="button" value="*" onclick="mostrar('*')">
+        <br>
+        <input type="button" value="0" onclick="mostrar('0')">
+        <input type="button" value="." onclick="mostrar('.')">
+        <input type="button" value="/" onclick="mostrar('/')">
+        <input type="button" value="=" onclick="calcular()">
+        <br>
+        <input type="button" value="C" onclick="borrar()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
